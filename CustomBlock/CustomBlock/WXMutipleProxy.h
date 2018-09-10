@@ -7,17 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WXProtocolTest.h"
 
 @interface WXMutipleProxy : NSObject
 
 + (instancetype)sharedInstance;
 
-@property (nonatomic, strong) NSMutableArray *delegates;
-
-@property (nonatomic, strong) NSPointerArray *weakRefTargets;
-
 - (void)muProxyAddObject:(id)target;
 
+- (void)muproxyRemoveObject;
+
+@end
+
+@interface TmpObj : NSObject<WXProtocolTest>
 
 
 @end

@@ -13,7 +13,7 @@
 
 - (void)dealloc {
     NSLog(@"%s", __func__);
-    NSLog(@"%@", [WXMutipleProxy sharedInstance].weakRefTargets);
+    [[WXMutipleProxy sharedInstance] muproxyRemoveObject];
 }
 
 - (instancetype)init {

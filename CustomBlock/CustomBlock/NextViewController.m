@@ -23,7 +23,7 @@
 - (void)dealloc
 {
     NSLog(@"%s", __func__);
-    NSLog(@"%@", [WXMutipleProxy sharedInstance].weakRefTargets);
+    [[WXMutipleProxy sharedInstance] muproxyRemoveObject];
 }
 
 - (void)viewDidLoad {
@@ -47,7 +47,7 @@
     
     [[WXMutipleProxy sharedInstance] muProxyAddObject:self.person];
     [[WXMutipleProxy sharedInstance] muProxyAddObject:self];
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,7 +73,7 @@
     _person.name = [NSString stringWithFormat:@"%d", i];
     
     [[WXMutipleProxy sharedInstance] performSelector:@selector(testDemo)];
-    
+
 }
 
 #pragma mark - wx delegate

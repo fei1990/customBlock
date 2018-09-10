@@ -19,7 +19,6 @@
 		7B4C47B321425CEB00893325 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C47B221425CEB00893325 /* Person.m */; };
 		7B4C47B621426D8200893325 /* NextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C47B521426D8200893325 /* NextViewController.m */; };
 		7B4C47B92142728100893325 /* NSObject+WXKVO_block.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C47B82142728100893325 /* NSObject+WXKVO_block.m */; };
-		7B4C47BC2142796D00893325 /* WXDelegateMediation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4C47BB2142796D00893325 /* WXDelegateMediation.m */; };
 		7BAC3BA721466C3600D8F01B /* WXMutipleProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC3BA621466C3600D8F01B /* WXMutipleProxy.m */; };
 /* End PBXBuildFile section */
 
@@ -65,8 +64,6 @@
 		7B4C47B521426D8200893325 /* NextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextViewController.m; sourceTree = "<group>"; };
 		7B4C47B72142728100893325 /* NSObject+WXKVO_block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+WXKVO_block.h"; sourceTree = "<group>"; };
 		7B4C47B82142728100893325 /* NSObject+WXKVO_block.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WXKVO_block.m"; sourceTree = "<group>"; };
-		7B4C47BA2142796D00893325 /* WXDelegateMediation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXDelegateMediation.h; sourceTree = "<group>"; };
-		7B4C47BB2142796D00893325 /* WXDelegateMediation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXDelegateMediation.m; sourceTree = "<group>"; };
 		7BAC3BA521466C3600D8F01B /* WXMutipleProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXMutipleProxy.h; sourceTree = "<group>"; };
 		7BAC3BA621466C3600D8F01B /* WXMutipleProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WXMutipleProxy.m; sourceTree = "<group>"; };
 		7BAC3BA82146765D00D8F01B /* WXProtocolTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WXProtocolTest.h; sourceTree = "<group>"; };
@@ -130,8 +127,6 @@
 				7B4C47AF21425CD700893325 /* NSObject+WXKVO.m */,
 				7B4C47B72142728100893325 /* NSObject+WXKVO_block.h */,
 				7B4C47B82142728100893325 /* NSObject+WXKVO_block.m */,
-				7B4C47BA2142796D00893325 /* WXDelegateMediation.h */,
-				7B4C47BB2142796D00893325 /* WXDelegateMediation.m */,
 				7BAC3BA521466C3600D8F01B /* WXMutipleProxy.h */,
 				7BAC3BA621466C3600D8F01B /* WXMutipleProxy.m */,
 				7B4C478221425CA500893325 /* Main.storyboard */,
@@ -299,7 +294,6 @@
 				7B4C47B92142728100893325 /* NSObject+WXKVO_block.m in Sources */,
 				7B4C47B621426D8200893325 /* NextViewController.m in Sources */,
 				7B4C47B021425CD700893325 /* NSObject+WXKVO.m in Sources */,
-				7B4C47BC2142796D00893325 /* WXDelegateMediation.m in Sources */,
 				7B4C47B321425CEB00893325 /* Person.m in Sources */,
 				7B4C478C21425CA600893325 /* main.m in Sources */,
 				7B4C477E21425CA500893325 /* AppDelegate.m in Sources */,

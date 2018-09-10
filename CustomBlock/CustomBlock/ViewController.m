@@ -10,7 +10,6 @@
 #import "Person.h"
 #import "NSObject+WXKVO.h"
 #import "NextViewController.h"
-#import "WXDelegateMediation.h"
 
 @interface ViewController ()
 
@@ -26,12 +25,6 @@
     _person = [[Person alloc]init];
     
     [_person wx_addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:NULL];
-    
-//    [[WXDelegateMediation sharedInstance] setCallback:^(NSString *str) {
-//       
-//        NSLog(@"viewcontroller str : %@", str);
-//        
-//    }];
     
 }
 
