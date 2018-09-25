@@ -12,4 +12,6 @@
 
 - (void)testDemo;
 
+- (void)testMutiParams:(id)obj1 obj2:(id)obj2 obj3:(id)obj3;
+
 @end

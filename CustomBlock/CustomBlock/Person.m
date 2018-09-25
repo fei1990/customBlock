@@ -30,5 +30,15 @@
     NSLog(@"%s", __func__);
 }
 
+- (void)testMutiParams:(id)obj1 obj2:(id)obj2 obj3:(id)obj3 {
+    
+    NSLog(@"obj1 :%p", obj1);
+    
+    NSLog(@"obj2 :%p", obj2);
+    
+    NSLog(@"obj3 :%p", obj3);
+    
+}
+
 
 @end

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WXProtocolTest.h"
+#import "NSObject+MultiParams.h"
 
 @interface WXMutipleProxy : NSObject
 

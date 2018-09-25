@@ -73,12 +73,24 @@
     _person.name = [NSString stringWithFormat:@"%d", i];
     
     [[WXMutipleProxy sharedInstance] performSelector:@selector(testDemo)];
+    
+    [[WXMutipleProxy sharedInstance] wx_performSelector:@selector(testMutiParams:obj2:obj3:) withObject:[NSObject new], [NSObject new], [NSObject new], nil];
 
 }
 
 #pragma mark - wx delegate
 - (void)testDemo {
     NSLog(@"%s", __func__);
+}
+
+- (void)testMutiParams:(id)obj1 obj2:(id)obj2 obj3:(id)obj3 {
+    
+    NSLog(@"obj1 :%p", obj1);
+    
+    NSLog(@"obj2 :%p", obj2);
+    
+    NSLog(@"obj3 :%p", obj3);
+    
 }
 
 @end
