@@ -10,6 +10,7 @@
 #import "Person.h"
 #import "NSObject+WXKVO.h"
 #import "NextViewController.h"
+#import "WXMutipleProxy.h"
 
 @interface ViewController ()
 
@@ -25,6 +26,8 @@
     _person = [[Person alloc]init];
     
     [_person wx_addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:NULL];
+    
+    [[WXMutipleProxy sharedInstance] muProxyAddObject:self];
     
 }
 
@@ -51,6 +54,8 @@
     
     _person.name = [NSString stringWithFormat:@"%d", i];
     
+    [[WXMutipleProxy sharedInstance] performSelector:@selector(testDemo)];
+    
 }
 - (IBAction)pushAction:(id)sender {
     
@@ -59,6 +64,8 @@
     
 }
 
-
+- (void)testDemo {
+    NSLog(@"%s", __func__);
+}
 
 @end

@@ -51,11 +51,11 @@
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
     
-//    if (self.weakRefTargets.count == 0) {
-//        TmpObj *tmpObj = [TmpObj new];
-//        NSMethodSignature *sig = [tmpObj methodSignatureForSelector:aSelector];
-//        return sig;
-//    }
+    if (self.weakRefTargets.count == 0) {
+        TmpObj *tmpObj = [TmpObj new];
+        NSMethodSignature *sig = [tmpObj methodSignatureForSelector:aSelector];
+        return sig;
+    }
     
     NSMethodSignature *signature = [super methodSignatureForSelector:aSelector];
     if (!signature) {
@@ -80,8 +80,8 @@
 
 @implementation TmpObj
 
-//- (void)testDemo {}
-//
-//- (void)testMutiParams:(id)obj1 obj2:(id)obj2 obj3:(id)obj3{}
+- (void)testDemo {}
+
+- (void)testMutiParams:(id)obj1 obj2:(id)obj2 obj3:(id)obj3{}
 
 @end
